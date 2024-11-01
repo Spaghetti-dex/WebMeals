@@ -1,0 +1,98 @@
+/* Reset margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Cover Page Styling */
+.cover-page {
+  height: 100vh;
+  background: linear-gradient(135deg, #6d8fb3, #2d2f5f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.cover-content {
+  animation: fadeIn 1.5s ease;
+}
+
+.title {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.intro {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.explore-btn {
+  padding: 10px 20px;
+  background-color: #d7d3cc;
+  color: #2d2f5f;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.explore-btn:hover {
+  background-color: #6d8fb3;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Main Content Styling */
+.main-content {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.recipe {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recipe:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.recipe h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #2d2f5f;
+}
+
+.recipe p {
+  color: #555;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
