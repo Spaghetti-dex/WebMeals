@@ -1,36 +1,74 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WebMeals</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebMeals</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Cover Page -->
-  <section class="cover-page">
-    <div class="cover-content">
-      <h1 class="title">WebMeals</h1>
-      <p class="intro">Affordable ulam ideas in just a few clicks </p>
-      <button class="explore-btn">Explore Recipes</button>
-    </div>
-  </section>
+    <!-- Header Section -->
+    <header>
+        <div class="logo" onclick="goHome()">WebMeals</div>
+        <nav>
+            <ul>
+                <li><a href="#below100">Below 100 Pesos</a></li>
+                <li><a href="#below150">150 Pesos Recipes</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Main Content -->
-  <section class="main-content">
-    <div class="recipe">
-      <h2>Adobo</h2>
-      <p>A classic Filipino dish made with chicken or pork in a savory soy sauce and vinegar sauce.</p>
-    </div>
-    <div class="recipe">
-      <h2>Sinigang</h2>
-      <p>A sour soup with tamarind as the base, often with pork or shrimp.</p>
-    </div>
-    <div class="recipe">
-      <h2>Kare-Kare</h2>
-      <p>A thick, savory peanut stew often paired with bagoong (shrimp paste).</p>
-    </div>
-    <!-- Add more recipes here as needed -->
-  </section>
+    <!-- Title Section -->
+    <section id="title">
+        <h1>Welcome to WebMeals!</h1>
+        <p>Choose your recipe below:</p>
+    </section>
+
+    <!-- Recipes Below 100 Pesos -->
+    <section id="below100" class="recipe-section">
+        <h2>Recipes Below 100 Pesos</h2>
+        <div class="recipe-container">
+            <div class="recipe-card">
+                <h3>Pasta Delight</h3>
+                <p>Ingredients: Pasta, Tomato Sauce, Garlic</p>
+                <button onclick="alert('Enjoy your Pasta Delight!')">View Recipe</button>
+            </div>
+            <div class="recipe-card">
+                <h3>Egg Fried Rice</h3>
+                <p>Ingredients: Rice, Eggs, Soy Sauce</p>
+                <button onclick="alert('Enjoy your Egg Fried Rice!')">View Recipe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Worth 150 Pesos -->
+    <section id="below150" class="recipe-section">
+        <h2>Recipes Worth 150 Pesos</h2>
+        <div class="recipe-container">
+            <div class="recipe-card">
+                <h3>Chicken Curry</h3>
+                <p>Ingredients: Chicken, Curry Powder, Coconut Milk</p>
+                <button onclick="alert('Enjoy your Chicken Curry!')">View Recipe</button>
+            </div>
+            <div class="recipe-card">
+                <h3>Beef Stir Fry</h3>
+                <p>Ingredients: Beef, Bell Pepper, Soy Sauce</p>
+                <button onclick="alert('Enjoy your Beef Stir Fry!')">View Recipe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 WebMeals | Your budget-friendly recipe blog</p>
+    </footer>
+
+    <script>
+        // Function to scroll to top/home
+        function goHome() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
